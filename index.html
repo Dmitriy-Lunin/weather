@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/weather/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/weather/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/weather/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/weather/favicon/site.webmanifest" />
+    <script type="module" crossorigin src="/weather/assets/index-FrD0_3AG.js"></script>
+    <link rel="stylesheet" crossorigin href="/weather/assets/index-tfRmI8Gu.css">
+  </head>
+  <body>
+    <main class="app">
+      <form action="" class="form" id="form">
+        <input
+          type="text"
+          class="form__input"
+          placeholder="Enter city name"
+          id="input"
+        />
+        <button class="form__btn">
+          <img src="/weather/images/search.svg" alt="Search" class="form__img" />
+        </button>
+      </form>
+      <div class="weather-current">
+        <section class="condition">
+          <h2 class="condition__main" id="condition-main"></h2>
+          <div class="condition__svg" id="condition-svg"></div>
+          <p class="condition__description" id="condition-description"></p>
+        </section>
+        <section class="temp">
+          <img
+            src="/weather/images/high-temperature.svg"
+            alt="Temperature"
+            class="temp__img"
+            id="temp-img"
+          />
+          <div class="temp__main" id="temp-main"></div>
+          <div class="temp__max" id="temp-max">max</div>
+          <div class="temp__min" id="temp-min">min</div>
+          <p class="temp__feeling" id="temp-feeling">feels like:</p>
+        </section>
+        <section class="location">
+          <h2 class="location__header" id="location-header"></h2>
+          <p class="location__description" id="location-description"></p>
+        </section>
+        <div class="weather__details">
+          <section class="details">
+            <img
+              src="/weather/images/low-humidity.svg"
+              alt="Humidity"
+              class="details__img"
+              id="humidity-img"
+            />
+            <div class="details__value" id="humidity-valu"></div>
+            <div class="details__title">Humidity</div>
+          </section>
+          <section class="details">
+            <img
+              src="/weather/images/fresh-wind.svg"
+              alt="Wind"
+              class="details__img"
+              id="wind-speed-img"
+            />
+            <div class="details__value" id="wind-speed-value"></div>
+            <div class="details__title" id="wind-speed-img">Wind speed</div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
