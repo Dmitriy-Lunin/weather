@@ -30,7 +30,7 @@ async function processingTheForm(event) {
 }
 
 async function getGeoCoordinates(loc) {
-  const urlGeo = `http://api.openweathermap.org/geo/1.0/direct?q=${loc}&limit=5&appid=${APIKEY}`;
+  const urlGeo = `https://api.openweathermap.org/geo/1.0/direct?q=${loc}&limit=5&appid=${APIKEY}`;
   const response = await fetch(urlGeo);
   const json = await response.json();
   return json;
